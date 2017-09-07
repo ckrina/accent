@@ -1,0 +1,181 @@
+/* blau  #0074BD #0096FF */
+/* bg fosc #303233 #494B4C */
+/* gris #D9DDE0 */
+html {
+  font-size: 16px;
+}
+
+.header-navbar.navbar-semi-dark,
+.header-navbar.navbar-semi-dark .navbar-header {
+  background-color: #303233;
+}
+.header-navbar.navbar-semi-dark .navbar-nav .nav-link {
+  color: #fff;
+  opacity: 0.7;
+  border-top: 4px solid #303233;
+  height: 4rem;
+  transition:  0.3s ease-in-out;
+}
+.header-navbar .navbar-container ul.nav li > a.nav-link {
+  padding: 1.2rem 1.5rem 0.8rem 1.5rem;
+}
+.header-navbar.navbar-semi-dark .navbar-nav .nav-link.actiu,
+.header-navbar.navbar-semi-dark .navbar-nav .nav-link.actiu:hover {
+  opacity: 1;
+  background-color: #474747;
+  border-top: 4px solid #0096FF;
+  transition:  0.3s ease-in-out;
+}
+.header-navbar.navbar-semi-dark .navbar-nav .nav-link:hover {
+  opacity: 1;
+  background-color: #474747;
+  border-top: 4px solid #474747;
+  transition:  0.3s ease-in-out;
+}
+.main-menu.menu-dark .navigation {
+  background: #494B4C;
+}
+.main-menu.menu-dark .navigation > li {
+  border-top: 1px solid #303233;
+}
+.main-menu.menu-dark .navigation > li.last {
+  border-bottom: 1px solid #303233;
+}
+.main-menu.menu-dark .navigation > li > a {
+  padding: 15px 20px;
+}
+body.vertical-layout.vertical-menu.menu-expanded .main-menu .navigation li.has-sub > a:not(.mm-next)::after {
+  top: 15px;
+}
+.main-menu.menu-dark .navigation > li ul li > a {
+  padding: 4px 20px 4px 50px;
+}
+.main-menu.menu-dark .navigation > li ul {
+  padding: 7px 0;
+}
+.main-menu.menu-dark,
+.main-menu.menu-dark .navigation > li > a
+.main-menu.menu-dark .navigation > li.open > a,
+.main-menu.menu-dark .navigation > li.hover > a,
+.main-menu.menu-dark .navigation > li:hover > a,
+.main-menu.menu-dark .navigation > li.active > a {
+  color: #D9DDE0;
+  background: #494B4C;
+}
+.main-menu.menu-dark .navigation > li.open > a {
+  color: #fff;
+  background: #636566;
+}
+
+.main-menu.menu-dark .navigation > li ul .active > a {
+  color: #fff;
+  background-color: transparent;
+  font-weight: 600;
+  position: relative;
+}
+.main-menu.menu-dark .navigation > li ul .active > a:before {
+  content: "•";
+  color: #0074BD;
+  position: absolute;
+  left: 30px;
+  display: block;
+}
+
+.card {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.main-menu.menu-shadow {
+  box-shadow: none;
+}
+html body .content .content-wrapper {
+  padding: 1rem 2.5rem;
+}
+.content-header {
+  height: 165px;
+  background: url('../images/title-menu-edit-page.png') no-repeat 5px 1em #fff;
+}
+.app-content.content {
+  color: #9B9FA2;
+}
+.field-item {
+  margin: 1rem 0 2.5rem;
+  position: relative;
+  transition:  0.1s ease-in-out;
+}
+.field-item:hover,
+.field-item:focus {
+  margin-bottom: -0.5rem;
+  transition:  0.3s ease-in-out;
+}
+
+.field-item .field-label  {
+  position: relative;
+  margin: 0;
+  transition:  0.3s ease-in-out;
+}
+.field-item:hover .field-label,
+.field-item:focus .field-label  {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  transition:  0.3s ease-in-out;
+}
+.field-item .repos {
+  font-size: 20px;
+  visibility: visible;
+  position: absolute;
+}
+.field-item:hover .repos,
+.field-item:focus .repos {
+  font-size: 20px;
+  visibility: hidden;
+}
+.field-item .actiu,
+.field-item .description {
+  opacity: 0;
+  transition:  0.3s ease-in-out;
+}
+.field-item:hover .actiu,
+.field-item:focus .actiu,
+.field-item:hover .description,
+.field-item:focus .description {
+  opacity: 1;
+  transition:  0.3s ease-in-out;
+}
+.field-item .actiu {
+  padding: 0;
+  margin-left: 0;
+  background-color: rgba(255,255,255,0);
+  border-left: 0 solid #0096FF;
+  transition:  0.3s ease-in-out;
+  font-size: 20px;
+  color: #6E7275;
+}
+.field-item:hover .actiu,
+.field-item:focus .actiu {
+  padding: 1rem;
+  margin-left: -1rem;
+  background-color: rgba(255,255,255,1);
+  border-left: 4px solid #0096FF;
+  transition:  0.3s ease-in-out;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.field-item .description {
+  font-size: 13px;
+}
+
+.field-item .ajuda {
+  position: absolute;
+  top: 30px;
+  right: -24px;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background: url("../images/help-field.svg") no-repeat center center transparent;
+  opacity: 0;
+}
+.field-item:hover .ajuda,
+.field-item:focus .ajuda {
+  opacity: 1;
+  transition:  0.3s ease-in-out;
+}

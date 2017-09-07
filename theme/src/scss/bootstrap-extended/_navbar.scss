@@ -329,7 +329,7 @@
     }
 }
 
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
      ul {
         li {
             a {
@@ -483,12 +483,12 @@
             .hamburger-inner,
             .hamburger-inner::before,
             .hamburger-inner::after {
-                background-color: $navbar-light-bg;
+                background-color: $navbar-dark-bg;
             }
             .navbar-header {
                 .navbar-nav {
                     .nav-link {
-                        color: $navbar-light-bg;
+                        color: $navbar-dark-bg;
                     }
                 }
             }
